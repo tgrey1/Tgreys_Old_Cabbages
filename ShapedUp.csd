@@ -1,7 +1,11 @@
 <Cabbage>
 ;
 ; ShapedUp.csd by Kevin Welsh (tgrey)
-; version 1.0 - Oct. 28 2015
+; version 1.1 - Nov. 2 2017
+;
+; !!!PLEASE NOTE!!!  This is an outdated instrument minimally updated to run in cabbage2.
+; If you are using cabbage1, use the older version 1.0!  Functionally they are identical.
+; A newer better version of this is in the works!
 ;
 ;  This is a flexible waveshaping distortion with 3 gain stages, and extensive pre and post filtering.
 ;  It is capable of mangling a sound well past the bounds of recognizability.
@@ -51,7 +55,8 @@
 #define DIS_PLANT colour(55,55,55,55), fontcolour(50, 50, 50, 255), line(1), text("Disabled")
 #define PLANT colour(40,40,40,255), line(1)
 #define ROOT colour(20,20,20,255)
-#define GRAPH tablecolour(green)
+;#define GRAPH tablecolour(green)
+#define GRAPH tablecolour(0,255,0,60)
 
 ; STEP 1: add shape name at the **end** of SHAPE_MENU.  The order here must also match the order set in step 2.
 #define SHAPE_MENU items("Sine [8 partials]", "Line [1 seg]", "Pyramid [2 seg]", "Triangle [3 seg]", "Square [3 Seg]", "Saw [3 Seg]", "Reverse Saw [3 Seg]")
@@ -61,11 +66,11 @@
 
 form size(380, 542), caption("ShapedUp"), pluginID("tshp"), $ROOT
 
-groupbox bounds(10, 218, 360, 190), $DIS_PLANT { }
-groupbox bounds(10, 94, 178, 120), $DIS_PLANT { }
-groupbox bounds(193, 94, 178, 120), $DIS_PLANT { }
-groupbox bounds(10, 412, 178, 120), $DIS_PLANT { }
-groupbox bounds(193, 412, 178, 120), $DIS_PLANT { }
+groupbox bounds(10, 218, 360, 190), $DIS_PLANT
+groupbox bounds(10, 94, 178, 120), $DIS_PLANT
+groupbox bounds(193, 94, 178, 120), $DIS_PLANT
+groupbox bounds(10, 412, 178, 120), $DIS_PLANT
+groupbox bounds(193, 412, 178, 120), $DIS_PLANT
 
 groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   button bounds(80, 2, 60, 15), channel("test"), text("Test", "Testing..."), latched(1), value(0), visible(0), identchannel("test-c"), $TEST_BUTTON
@@ -84,6 +89,7 @@ groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
 
   rslider bounds(246, 25, 50, 50), channel("drywet"), range(-1, 1, 1, 1, 0.01), text("Dry/Wet"), $DW_KNOB
   rslider bounds(304, 25, 50, 50), channel("balance"), range(-1, 1, 0, 1, 0.01), text("Balance"),  $PAN_KNOB
+}
 
 groupbox bounds(10, 218, 360, 190), text("Distort"), plant("distort"),  identchannel("distort-c"), $PLANT {
   rslider bounds(10, 25, 100, 100), channel("dist"), range(0, 1, .5, 1, 0.01), text("Distortion"), identchannel("dist-c"), $EFF_KNOB
@@ -147,7 +153,8 @@ groupbox bounds(0, 0, 375, 290), text("ShapedUp Controls"), plant("Custom Contro
   button bounds(290, 220, 80, 20), channel("reset"), latched(0), text("Reset"), value(0), $BUTTON
 }
 
-groupbox bounds(0, 0, 350, 110), plant("Warning"), popup(1), identchannel("rezzy-popup"), show(0), $PLANT {
+; renamed this warning identchannel name so it can't popup anymore
+groupbox bounds(0, 0, 350, 110), plant("Warning"), popup(1), identchannel("rezzy-popup-dis"), show(0), $PLANT {
   label bounds(0, 20, 350, 90), text(""), align("centre"),  fontcolour(155, 0, 0), colour(60,60, 60, 255)
   label bounds(0, 20, 350, 30), text("Warning!"), align("centre"),  fontcolour(155, 0, 0), colour(60,60, 60, 255)
   label bounds(0, 50, 350, 20), text("Rezzy in LPF mode is *VERY*"), align("centre"),  fontcolour(155, 155, 155), colour(60,60, 60, 255)

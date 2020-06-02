@@ -75,9 +75,9 @@ groupbox bounds(193, 412, 178, 120), $DIS_PLANT
 groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   button bounds(80, 2, 60, 15), channel("test"), text("Test", "Testing..."), latched(1), value(0), visible(0), identchannel("test-c"), $TEST_BUTTON
 
-  label bounds(10, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(10, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(25, 5, 10, 10), channel("in-clip"), value(0), identchannel("in-clip-c"), $CLIP_CB
-  label bounds(325, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(325, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(340, 5, 10, 10), channel("clip"), value(0), identchannel("clip-c"), $CLIP_CB
 
   checkbox bounds(10, 25, 90, 25), channel("bypass"), shape("circle"), text("---"), identchannel("bypass-c"), $GREEN_CB

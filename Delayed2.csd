@@ -70,9 +70,9 @@ groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   button bounds(46, 2, 50, 15), channel("testL"), text("Test L","ON"), latched("0"), value(0), visible(0), identchannel("testl-c"), $TEST_BUTTON
   button bounds(230, 2, 60, 15), channel("testSt"), text("Test St","TESTING"), latched("0"), value(0), visible(0), identchannel("tests-c"), $TEST_BUTTON
 
-  label bounds(10, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(10, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(25, 5, 10, 10), channel("in-clip"), value(0), identchannel("in-clip-c"), $CLIP_CB
-  label bounds(325, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(325, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(340, 5, 10, 10), channel("clip"), value(0), identchannel("clip-c"), $CLIP_CB
 
   checkbox bounds(10, 25, 90, 25), channel("bypass"), shape("circle"), text("---"), identchannel("bypass-c"), $GREEN_CB
@@ -85,9 +85,9 @@ groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
 }
 
 groupbox bounds(10, 94, 360, 173), text("Delay"), plant("delay"), identchannel("delay-c"), $PLANT {
-  label bounds(5, 5, 120, 10), text("TAP"), align("left"), $TEXT
+  label bounds(5, 5, 30, 10), text("TAP"), align("left"), $TEXT
   checkbox bounds(25, 5, 10, 10), channel("tapl"), value(0), identchannel("tapl-c"), $STATUS_CB
-  label bounds(320, 5, 120, 10), text("TAP"), align("left"), $TEXT
+  label bounds(320, 5, 30, 10), text("TAP"), align("left"), $TEXT
   checkbox bounds(340, 5, 10, 10), channel("tapr"), value(0), identchannel("tapr-c"), $STATUS_CB
 
   rslider bounds(4, 25, 80, 80), channel("delayTL"), range(.001, 6, 0.5, .5, 0.001), text("Delay L"), popuptext("Time in seconds"), identchannel("TimeL"), visible(0), $EFF_KNOB

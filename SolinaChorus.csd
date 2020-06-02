@@ -39,9 +39,9 @@
 form size(380, 368), caption("Solina Chorus"), pluginID("tslc"), $ROOT
 
 groupbox bounds(10, 10, 360, 80), text("In/Out"), plant("io"), $PLANT {
-  label bounds(10, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(10, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(25, 5, 10, 10), channel("in-clip"), value(0), identchannel("in-clip-c"), popuptext("Input Overload"), $CLIP_CB
-  label bounds(325, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(325, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(340, 5, 10, 10), channel("clip"), value(0), identchannel("clip-c"), popuptext("Ouput Overload"), $CLIP_CB
   button bounds(70, 0, 60, 20), channel("test"), text("Test", "Testing..."), latched(1), value(0), visible(0), identchannel("test-c"), $TEST_BUTTON
 

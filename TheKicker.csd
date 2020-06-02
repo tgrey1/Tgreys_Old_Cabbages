@@ -70,7 +70,7 @@ groupbox bounds(314, 10, 195, 100), text("Envelope"), plant("env"), $PLANT {
 },
 
 groupbox bounds(513, 10, 130, 100), text("Out"), plant("out"), $PLANT {
-  label bounds(95, 5, 120, 10), text("OL"), align("left"), $TEXT
+  label bounds(95, 5, 30, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(110, 5, 10, 10), channel("clip"), value(0), identchannel("clip-c"), $CLIP_CB
   rslider bounds(0, 25, 65, 65), channel("level"), range(-90,30, -3, 2.5, 0.01), text("Level dB"), $GAIN_KNOB 
     rslider bounds(65, 25, 65, 65), channel("balance"), range(-1, 1, 0, 1, 0.01), text("Balance"), $PAN_KNOB

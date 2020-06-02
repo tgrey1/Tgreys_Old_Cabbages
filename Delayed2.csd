@@ -212,7 +212,7 @@ opcode quickclip,ak,aj
   kclip rms asig
 
   #ifndef $CLIP_LEV
-    #define $CLIP_LEV #.99#
+    #define CLIP_LEV #.99#
   #end
 
   if (icliplev<0) then

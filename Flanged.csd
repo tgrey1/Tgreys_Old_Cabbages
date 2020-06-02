@@ -228,7 +228,7 @@ opcode quickclip,ak,aj
   asig, icliplev xin
 
   #ifndef $CLIP_LEV
-    #define $CLIP_LEV #.99#
+    #define CLIP_LEV #.99#
   #end
   
   if (icliplev<0) then
@@ -321,7 +321,7 @@ if changed(ishape,kreset)==1 then
     iseg2 = 1025-iseg1
     ival3 = p10
     ift ftgentmp 1, 0, 1024, -7, ival1, iseg1, ival2, iseg2, ival3
-  elseif (ishape==$W_TRIANGLE) || (ishape==$W_SQUARE) || (ishape==$$W_SAW) || (ishape==$W_RSAW) then
+  elseif (ishape==$W_TRIANGLE) || (ishape==$W_SQUARE) || (ishape==$W_SAW) || (ishape==$W_RSAW) then
   ; 3 segments
     ival1=p6
     iseg1=(p7*256)+256

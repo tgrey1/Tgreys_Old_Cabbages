@@ -102,7 +102,7 @@ groupbox bounds(10, 94, 178, 120), text("Pre-HPF"), plant("pre-hpf"), identchann
   rslider bounds(10, 22, 50, 50), channel("prehpffreq"), range(10, 15000, 10, .5, 0.01), text("Freq"), identchannel("prehpff_c"), visible(0), $FILT_KNOB
   rslider bounds(110, 22, 50, 50), channel("prehpfg"), range(-10, 10, 0, 1, 0.01), text("Gain"), identchannel("prehpfg_c"), visible(0), $FILT_KNOB
   rslider bounds(60, 22, 50, 50), channel("prehpfq"), range(0.0, 1, 0.5, 1, 0.01), text("Q/Res"), identchannel("prehpfq_c"), visible(0), $FILT_KNOB
-  combobox bounds(5, 80, 100, 30), channel("prehpfmode"), channeltype("number"), value(1),$HPF_MENU, $COMBO, identchannel("mytest")
+  combobox bounds(5, 80, 100, 30), channel("prehpfmode"), channeltype("number"), value(1), $HPF_MENU, $COMBO, identchannel("mytest")
   rslider bounds(110, 70, 50, 50), channel("prehpfdepth"), range(0, 8, 1, 1, 1), text("Depth"), identchannel("prehpfdepth_c"), visible(0), $FILT_KNOB
 }
 

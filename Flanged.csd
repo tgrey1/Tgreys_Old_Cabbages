@@ -151,7 +151,7 @@ groupbox bounds(0, 0, 375, 240), text("Flanged Controls"), plant("Custom Control
 ;  checkbox bounds(105, 210, 140, 20), channel("breakpoints"), value(0), identchannel("breakpoints-c"), text("Manual Breakpoints"), $GREEN_CB, active(0)
   button bounds(290, 210, 80, 20), channel("reset"), latched(0), text("Reset"), value(0), $BUTTON
 }
-  label bounds(0, 406, 350, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
+  ; label bounds(0, 406, 350, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
 
 </Cabbage>
 <CsoundSynthesizer>

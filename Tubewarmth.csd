@@ -86,7 +86,7 @@ groupbox bounds(10, 94, 360, 200), text("Tubewarmth"), plant("tube"), identchann
   rslider bounds(15, 30, 150, 150), channel("drive"), range(0, 10, 0), text("Drive"), $EFF_KNOB
   rslider bounds(195, 30, 150, 150), channel("blend"), range(-10, 10, 0), text("Blend"), $EFF_KNOB
 }
-  label bounds(0, 276, 350, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
+  ; label bounds(0, 276, 350, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
 </Cabbage>
 <CsoundSynthesizer>
 <CsOptions>

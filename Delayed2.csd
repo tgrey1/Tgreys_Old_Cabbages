@@ -135,7 +135,7 @@ groupbox bounds(0, 0, 350, 110), text("Warning"), plant("Warning"), popup(1), id
   label bounds(0, 50, 350, 20), text("Rezzy in LPF mode is *VERY*"), align("centre"), $WARN_TEXT
   label bounds(0, 70, 350, 20), text("unstable.  Be careful."), align("centre"), $WARN_TEXT
 }
-  label bounds(0, 266, 320, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
+  ; label bounds(0, 266, 320, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
 
 </Cabbage>
 <CsoundSynthesizer>

@@ -161,7 +161,7 @@ groupbox bounds(0, 0, 350, 110), plant("Warning"), popup(1), identchannel("rezzy
   label bounds(0, 70, 350, 20), text("unstable.  Be careful."), align("centre"),  fontcolour(155, 155, 155), colour(60,60, 60, 255)
 }
 
-  label bounds(0, 412, 220, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
+  ; label bounds(0, 412, 220, 15), text("---"), align("left"),  colour(155, 0, 0), fontcolour(255, 255, 255, 255), identchannel("debug"), visible(0)
 
 </Cabbage>
 <CsoundSynthesizer>

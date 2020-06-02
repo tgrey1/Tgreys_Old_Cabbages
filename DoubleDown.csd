@@ -49,7 +49,7 @@
 
 form size(380, 284), caption("Double Down"), pluginID("dbl2"), $ROOT
 
-groupbox bounds(10, 94, 360, 180), $DIS_PLANT { }
+groupbox bounds(10, 94, 360, 180), $DIS_PLANT
 
 groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   label bounds(10, 5, 120, 10), text("OL"), align("left"),  colour(0, 0, 0, 0), $TEXT

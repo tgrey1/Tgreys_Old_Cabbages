@@ -61,9 +61,9 @@
 
 form size(380, 396), caption("Delayed"), pluginID("tdl2"), $ROOT
 
-groupbox bounds(10, 94, 360, 173), $DIS_PLANT { }
-groupbox bounds(10, 271, 178, 120), $DIS_PLANT { }
-groupbox bounds(193, 271, 178, 120), $DIS_PLANT { }
+groupbox bounds(10, 94, 360, 173), $DIS_PLANT
+groupbox bounds(10, 271, 178, 120), $DIS_PLANT
+groupbox bounds(193, 271, 178, 120), $DIS_PLANT
 
 groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   button bounds(100, 2, 50, 15), channel("testR"), text("Test R","ON"), latched("0"), value(0), visible(0), identchannel("testr-c"), $TEST_BUTTON

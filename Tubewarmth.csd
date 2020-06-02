@@ -80,7 +80,7 @@ groupbox bounds(10, 10, 360, 80), text("In/Out"), plant("io"), $PLANT {
   rslider bounds(304, 25, 50, 50), channel("balance"), range(-1, 1, 0, 1, 0.01), text("Balance"), $PAN_KNOB
 }
 
-groupbox bounds(10, 94, 360, 200), $DIS_PLANT { }
+groupbox bounds(10, 94, 360, 200), $DIS_PLANT
 
 groupbox bounds(10, 94, 360, 200), text("Tubewarmth"), plant("tube"), identchannel("tube-c"), $PLANT {
   rslider bounds(15, 30, 150, 150), channel("drive"), range(0, 10, 0), text("Drive"), $EFF_KNOB

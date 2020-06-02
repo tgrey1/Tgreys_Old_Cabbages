@@ -82,7 +82,7 @@
 
 form size(380, 454), caption("Flanged"), pluginID("tfl1"), $ROOT
 
-groupbox bounds(10, 94, 360, 350), $DIS_PLANT { }
+groupbox bounds(10, 94, 360, 350), $DIS_PLANT
 
 groupbox bounds(10, 10, 360, 80), text("In/Out"), plant("io"), $PLANT {
   label bounds(10, 5, 120, 10), text("OL"), align("left"), $TEXT

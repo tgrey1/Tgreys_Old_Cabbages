@@ -53,9 +53,9 @@ groupbox bounds(10, 10, 360, 80), text("In/Out"), plant("io"), $PLANT {
   rslider bounds(304, 25, 50, 50), channel("balance"), range(-1, 1, 0, 1, 0.01), text("Balance"), $PAN_KNOB
 }
 
-groupbox bounds(10, 94, 360, 130), $DIS_PLANT { }
-groupbox bounds(10, 228, 178, 130), $DIS_PLANT { }
-groupbox bounds(192, 228, 178, 130), $DIS_PLANT { }
+groupbox bounds(10, 94, 360, 130), $DIS_PLANT
+groupbox bounds(10, 228, 178, 130), $DIS_PLANT
+groupbox bounds(192, 228, 178, 130), $DIS_PLANT
 
 groupbox bounds(10, 94, 360, 130), text("Controls"), plant("lfo2"), identchannel("control-c"), $PLANT {
   rslider bounds(5, 30, 80, 80), channel("fscale"), range(.01, 20000, 1, .18), text("Freq Scale"), $EFF_KNOB

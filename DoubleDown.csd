@@ -81,10 +81,10 @@ ksmps	= 64
 nchnls	= 2
 0dbfs	= 1
 
-;#define DEBUG #1#
+; #define DEBUG #1#
 #ifdef IS_A_PLUGIN
   #ifdef DEBUG
-;    #undef DEBUG
+   #undef DEBUG
   #endif
 #endif
 
@@ -214,7 +214,6 @@ endin
 
 </CsInstruments>  
 <CsScore>
-f1 0 1024 10 1
 i1 0 z
 </CsScore>
 </CsoundSynthesizer>

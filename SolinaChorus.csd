@@ -85,7 +85,7 @@ ksmps = 16
 nchnls = 2
 0dbfs=1
 
-;#define DEBUG #1#
+; #define DEBUG #1#
 #ifdef IS_A_PLUGIN
   #ifdef DEBUG
     #undef DEBUG

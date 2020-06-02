@@ -322,6 +322,6 @@ endin
 
 </CsInstruments>  
 <CsScore>
-i1 0 [ 60*60*24*7*4 ]
+i1 0 z
 </CsScore>
 </CsoundSynthesizer>

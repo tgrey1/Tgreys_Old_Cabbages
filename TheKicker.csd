@@ -180,6 +180,6 @@ endin
 f1 0 1024 9 1 .8 0 2 1 0
 ; sine table
 f2 0 1024 10 1
-f0 [ 60*60*24*7*4 ]
+f0 z
 </CsScore>
 </CsoundSynthesizer>

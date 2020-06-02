@@ -658,6 +658,6 @@ endin
 f1 0 1024 10 1
 ; line table for graphing scrub location
 f2 0 1024 7 0 1024 1
-i2 0 [ 60*60*24*7*4 ]
+i2 0 z
 </CsScore>
 </CsoundSynthesizer>

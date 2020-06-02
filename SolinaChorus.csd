@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; SolinaChorus.csd by Kevin Welsh (tgrey)
-; version 1.0 - Jun.4 2016
+; version 1.1 - May.31 2020 (maintenance release)
 ;
 ; This is a simple cabbage wrapper around Steven Yi's
 ; solina_chorus UDO, original commentary follows:

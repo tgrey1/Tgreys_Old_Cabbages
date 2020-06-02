@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; Tubewarmth.csd by Kevin Welsh (tgrey)
-; version 1.0 - Nov.7 2015
+; version 1.1 - May.31 2020 (maintenance release)
 ;
 ; This is a simple cabbage wrapper around Steven Yi's
 ; tap_tubewarmth UDO, which was in turn based off of

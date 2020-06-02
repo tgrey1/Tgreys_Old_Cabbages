@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; Flanged.csd by Kevin Welsh (tgrey)
-; version 1.0 - Oct.30 2015
+; version 1.1 - May.31 2020 (maintenance release)
 ;
 ; Stereo flanger with customizable wave shapes, delay offset,
 ; adjustable LFO phase, option to sync LFO to host tempo/meter/

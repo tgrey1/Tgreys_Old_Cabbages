@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; DoubleDown.csd by Kevin Welsh (tgrey)
-; version 2.1 - Oct.28 2015
+; version 2.2 - May.31 2020 (maintenance release)
 ;
 ; Quick & simple vocal track doubling effect using vdelay
 ; NOTE: input is collapsed to mono for stereo spread effect
@@ -32,6 +32,9 @@
 ;         removed clip opcode from quickclip, now limit only
 ;         added DEL_PORT_TIME so bypass and del are different times
 ;         fixed debug handling in preparation for IS_A_PLUGIN
+;
+; v 2.2 - maintenance release: minor changes and bug fixes to
+;         keep running current csound and cabbage versions
 ;
 
 #define GREEN_CB colour:0(0, 25, 0, 255), colour:1(0,255,0,255), fontcolour(160, 160, 160, 255), shape("circle"),

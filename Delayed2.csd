@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; Delayed.csd by Kevin Welsh (tgrey)
-; version 2.0 - Oct.28 2015
+; version 2.1 - May.31 2020 (maintenance release)
 ;
 ; Stereo delay line with switchable time modes, ping pong,
 ; L/R link, L/R swap, time portamento, and extensive

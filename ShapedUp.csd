@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; ShapedUp.csd by Kevin Welsh (tgrey)
-; version 1.1 - Nov. 2 2017
+; version 1.2 - May.31 2020 (maintenance release)
 ;
 ; !!!PLEASE NOTE!!!  This is an outdated instrument minimally updated to run in cabbage2.
 ; If you are using cabbage1, use the older version 1.0!  Functionally they are identical.

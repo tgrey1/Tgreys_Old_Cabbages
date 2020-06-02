@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; TheKicker.csd by Kevin Welsh (tgrey)
-; version 1.2 - Nov. 4 2015
+; version 1.3 - May.31 2020 (maintenance release)
 ;
 ; Simple 808 kick synth with a few tweaks.
 ;

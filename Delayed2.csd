@@ -103,7 +103,7 @@ groupbox bounds(10, 94, 360, 173), text("Delay"), plant("delay"), identchannel("
   combobox bounds(255, 50, 100, 30), channel("mode"), items("Time in Sec", "Beats", "Taps per Beat"), value(1), $COMBO
   combobox bounds(255, 82, 100, 30), channel("tempomode"), items("Host DAW", "Internal"), identchannel("tempotest"), value(1), visible(0) $COMBO
   label bounds(230, 118, 90, 15), text("BPM:"), align("centre"), identchannel("tempolabel"), visible(0), $TEXT
-  numberbox bounds(294, 115, 60, 20), channel("tempo"), range(40, 240, 60), identchannel("tempobox"), visible(0), $NUMBOX
+  nslider bounds(294, 115, 60, 20), channel("tempo"), range(40, 240, 60), identchannel("tempobox"), visible(0), $NUMBOX
   label bounds(280, 118, 90, 15), text("---"), align("centre"), identchannel("hosttempo"), visible(0), $TEXT
   checkbox bounds(5, 115, 79, 20), channel("link"), text("Link L+R"), value(0), identchannel("link-c"), $GREEN_CB
   checkbox bounds(100, 115, 82, 20), channel("swap"), text("Swap L+R"), value(0), $GREEN_CB

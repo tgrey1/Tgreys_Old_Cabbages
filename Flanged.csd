@@ -118,8 +118,8 @@ groupbox bounds(10, 94, 360, 350), text("Flange"), plant("flange"), identchannel
   combobox bounds(255, 82, 100, 30), channel("tempomode"), items("Host DAW", "Internal"), identchannel("tempotest"), value(1), visible(0) $COMBO
   label bounds(200, 124, 90, 15), text("BPM:"), align("right"), identchannel("tempolabel"), visible(0), $TEXT
   label bounds(200, 148, 90, 15), text("METER:"), align("right"), identchannel("meterlabel"), visible(0), $TEXT
-  numberbox bounds(294, 121, 60, 20), channel("tempo"), range(40, 280, 60), identchannel("tempobox"), visible(0), $NUMBOX
-  numberbox bounds(294, 145, 60, 20), channel("meter"), range(1, 32, 4, 1, 1), identchannel("meterbox"), visible(0), $NUMBOX
+  nslider bounds(294, 121, 60, 20), channel("tempo"), range(40, 280, 60), identchannel("tempobox"), visible(0), $NUMBOX
+  nslider bounds(294, 145, 60, 20), channel("meter"), range(1, 32, 4, 1, 1), identchannel("meterbox"), visible(0), $NUMBOX
   label bounds(280, 124, 90, 15), text("---"), align("centre"), identchannel("hosttempo"), visible(0), $TEXT
   label bounds(280, 148, 90, 15), text("---"), align("centre"), identchannel("hostmeter"), visible(0), $TEXT
   label bounds(20, 181, 80, 15), text("LFO Shape:"), align("centre"), $TEXT

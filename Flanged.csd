@@ -531,7 +531,8 @@ ain2 inch 2
 
 #ifdef DEBUG
   if ktest==1 then
-    ain1	diskin "fox.wav", 1, 0, 1
+    ain1 oscil .75, 440
+    ; ain1	diskin "fox.wav", 1, 0, 1
     ain2	= ain1
 ;    ain1, ain2 diskin "stereotest.wav", 1, 0, 1
   endif

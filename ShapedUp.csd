@@ -651,7 +651,8 @@ asrcR inch 2
 
 #ifdef $DEBUG
 if (ktest==1) then
-  asrcL diskin "fox.wav", 1, 0, 1
+  asrcL oscil .75, 440
+  ; asrcL diskin "fox.wav", 1, 0, 1
   asrcR = asrcL
   ;asrcL, asrcR diskin "stereotest.wav", 1, 0, 1
 endif

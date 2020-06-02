@@ -43,7 +43,7 @@ groupbox bounds(10, 10, 360, 80), text("In/Out"), plant("io"), $PLANT {
   checkbox bounds(25, 5, 10, 10), channel("in-clip"), value(0), identchannel("in-clip-c"), popuptext("Input Overload"), $CLIP_CB
   label bounds(325, 5, 120, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(340, 5, 10, 10), channel("clip"), value(0), identchannel("clip-c"), popuptext("Ouput Overload"), $CLIP_CB
-  button bounds(70, 0, 60, 20), channel("test"), text("Test", "Testing..."), latched(1), value(0), visible(0). identchannel("test-c"), $TEST_BUTTON
+  button bounds(70, 0, 60, 20), channel("test"), text("Test", "Testing..."), latched(1), value(0), visible(0), identchannel("test-c"), $TEST_BUTTON
 
   checkbox bounds(10, 25, 90, 25), channel("bypass"), text("---"), identchannel("bypass-c"), $GREEN_CB
   checkbox bounds(10, 52, 90, 25), channel("mono"), text("---"), identchannel("mono-c"), $RED_CB
@@ -259,7 +259,8 @@ ainR inch 2
 
 #ifdef DEBUG
   if ktest==1 then
-    ainL        diskin "fox.wav", 1, 0, 1
+    ainL        oscil .75, 440
+    ; ainL        diskin "fox.wav", 1, 0, 1
     ainR        = ainL
 ;    ainL, ainR diskin "stereotest.wav", 1, 0, 1
   endif

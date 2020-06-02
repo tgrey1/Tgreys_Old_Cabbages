@@ -159,7 +159,8 @@ asrcR inch 2
 ; test code only active if DEBUG is defined
 #ifdef DEBUG
   if ktest==1 then
-    asrcL	diskin "fox.wav", 1, 0, 1
+    asrcL oscil .75, 440
+    ; asrcL	diskin "fox.wav", 1, 0, 1
     asrcR	= asrcL
   endif
   kinit init 0

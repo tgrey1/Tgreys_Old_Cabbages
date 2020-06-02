@@ -68,7 +68,7 @@ groupbox bounds(193, 271, 178, 120), $DIS_PLANT
 groupbox bounds(10, 10, 360, 80), text("In / Out"), plant("io"), $PLANT {
   button bounds(100, 2, 50, 15), channel("testR"), text("Test R","ON"), latched("0"), value(0), visible(0), identchannel("testr-c"), $TEST_BUTTON
   button bounds(46, 2, 50, 15), channel("testL"), text("Test L","ON"), latched("0"), value(0), visible(0), identchannel("testl-c"), $TEST_BUTTON
-  button bounds(230, 2, 60, 15), channel("testSt"), text("Test St","TESTING"), latched("1"), value(0), visible(0), identchannel("tests-c"), $TEST_BUTTON
+  button bounds(230, 2, 60, 15), channel("testSt"), text("Test St","TESTING"), latched("0"), value(0), visible(0), identchannel("tests-c"), $TEST_BUTTON
 
   label bounds(10, 5, 120, 10), text("OL"), align("left"), $TEXT
   checkbox bounds(25, 5, 10, 10), channel("in-clip"), value(0), identchannel("in-clip-c"), $CLIP_CB
@@ -544,15 +544,15 @@ asrcL inch 1
 asrcR inch 2
 
 #ifdef $DEBUG
-if (ktestL==1) then
-  asrcL oscil .7, 440, 1
+if (ktestL==1 || ktestSt==1) then
+  asrcL oscil .7, 440
 endif
-if (ktestR==1) then
-  asrcR oscil .7, 440, 1
+if (ktestR==1 || ktestSt==1) then
+  asrcR oscil .7, 440
 endif
 
 if (ktestSt==1) then
-  asrcL, asrcR diskin "stereotest.wav", 1, 0, 1
+  ; asrcL, asrcR diskin "stereotest.wav", 1, 0, 1
 endif
 
 kinit init 0

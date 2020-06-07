@@ -1,7 +1,7 @@
 <Cabbage>
 ;
 ; DTMFdialer.csd by Kevin Welsh (tgrey)
-; version 1.0 - Oct.20 2015
+; version 1.1 - June.7 2020 (maintenance release)
 ;
 ; keypad DTMF dialer including A B C & D control tones, dial tone,
 ; ringback, busy, and reorder signals, and an autodialer.  Currently

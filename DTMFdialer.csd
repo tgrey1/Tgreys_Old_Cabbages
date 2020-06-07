@@ -476,6 +476,6 @@ endin
 f2 0 1024 7 1 512 1 0 0 512 0
 ; 33% duty pulse for ring envelope
 f3 0 1024 7 1 341 1 0 0 683 0
-i1 0 [ 60*60*24*7*4 ]
+i1 0 z
 </CsScore>
 </CsoundSynthesizer>

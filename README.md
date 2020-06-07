@@ -21,3 +21,7 @@ Included Effects:
 Included Synths:
 
 		TheKicker.csd
+
+Other:
+
+		DTMFdialer.csd

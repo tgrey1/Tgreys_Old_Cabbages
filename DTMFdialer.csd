@@ -78,14 +78,14 @@ groupbox bounds(10, 94, 240, 280), text("Keypad"), line(1) plant("dialer") {
 
 groupbox bounds(254, 94, 240, 187), text("Autodial"), line(1) plant("autodial") {
   texteditor bounds(10, 30, 220, 20), channel("number"), identchannel("number-c"), $TEXTBOX_COLOR
-  numberbox bounds(10, 60, 105, 20), range(20,2000,50,1,1), channel("length"), $TEXTBOX_COLOR
-  numberbox bounds(125, 60, 105, 20), range(20,2000,50,1,1), channel("space"), $TEXTBOX_COLOR
+  nslider bounds(10, 60, 105, 20), range(20,2000,50,1,1), channel("length"), $TEXTBOX_COLOR
+  nslider bounds(125, 60, 105, 20), range(20,2000,50,1,1), channel("space"), $TEXTBOX_COLOR
 
   label bounds(10, 80, 105, 12), text("Length [ms]"), align("centre")
   label bounds(125, 80, 105, 12), text("Pause [ms]"), align("centre")
 
-  numberbox bounds(10, 100, 105, 20), range(200,5000,1000,1,1), channel("dtlength"), $TEXTBOX_COLOR
-  numberbox bounds(125, 100, 105, 20), range(200,5000,1000,1,1), channel("respondwait"), $TEXTBOX_COLOR
+  nslider bounds(10, 100, 105, 20), range(200,5000,1000,1,1), channel("dtlength"), $TEXTBOX_COLOR
+  nslider bounds(125, 100, 105, 20), range(200,5000,1000,1,1), channel("respondwait"), $TEXTBOX_COLOR
 
   label bounds(10, 120, 105, 12), text("Dialtone [ms]"), align("centre")
   label bounds(125, 120, 105, 12), text("Rspnd wait [ms]"), align("centre")

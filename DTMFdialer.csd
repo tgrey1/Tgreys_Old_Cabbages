@@ -410,8 +410,8 @@ instr 3
   endif
   iatt = .005
   aenv linsegr 0, iatt, .5, idur-iatt, .5, iatt, 0
-  asig1 oscil aenv, ifreq1, 1
-  asig2 oscil aenv, ifreq2, 1
+  asig1 oscil aenv, ifreq1
+  asig2 oscil aenv, ifreq2
 
   gasig = gasig+(asig1+asig2)
   krel release
@@ -464,15 +464,14 @@ instr 4
   iatt = .005
   aenv2 linsegr 0, iatt, 1, p3-iatt, 1, iatt, 0
 
-  asig2 oscil aenv*aenv2, kfreq1, 1
-  asig1 oscil aenv*aenv2, kfreq2, 1
+  asig2 oscil aenv*aenv2, kfreq1
+  asig1 oscil aenv*aenv2, kfreq2
 
   gasig = gasig+(asig1+asig2)
 endin
 
 </CsInstruments>  
 <CsScore>
-f1 0 1024 10 1
 ; square for even spaced envelope
 f2 0 1024 7 1 512 1 0 0 512 0
 ; 33% duty pulse for ring envelope
